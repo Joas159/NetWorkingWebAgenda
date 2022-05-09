@@ -1,0 +1,26 @@
+==Rotas==
+
+-(Cadastro)-
+* Cadastro de Usuário
+  --> 1º nome || --> sobrenome || --> email || --> telefone || --> senha ||
+
+* Cadastro de Contato
+  --> nome || --> perfil || --> rede social || --> data contato inicial || --> aniversário ||
+  --> telefone || --> email || -->foto || --> data última atualização || --> tempo recorrência atualização ||
+
+* Cadastro de Compromisso
+  --> local/nome || --> data || --> hora início || --> hora final || --> R$ || --> observações ||
+  --> hora alarme via email ||
+
+* Cadastro de Temática
+  --> Car. Profissional || --> Desenv. Pessoal || --> Cresc. Espiritual ||
+  --> Aprendizado ||
+
+-(Agenda)-
+* Lista todas as Pessoas
+* Lista de tarefas
+* Lista de temáticas
+
+-(Painel de Ações)-
+* Alterar Senha de acesso
+* Alterar foto do usuário

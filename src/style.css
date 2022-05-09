@@ -14,3 +14,32 @@ header h1 {
     background-color: #af5656;
     color: #FFFFFF;
 }
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid black;
+    width: 250px;
+    min-height: 658px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.escondido {
+    display: none;
+}
+
+.divItem01,
+.divItem02,
+.divItem03 {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fechaSessao {
+    margin-top: 15px;
+}
