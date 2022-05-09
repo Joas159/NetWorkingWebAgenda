@@ -12,9 +12,8 @@
   --> local/nome || --> data || --> hora início || --> hora final || --> R$ || --> observações ||
   --> hora alarme via email ||
 
-* Cadastro de Temática
-  --> Car. Profissional || --> Desenv. Pessoal || --> Cresc. Espiritual ||
-  --> Aprendizado ||
+* Cadastro de Atualização de Networking
+  --> Data/hora || --> Pessoa || --> Atualização(TXT) || --> Atualização(Img) ||
 
 -(Agenda)-
 * Lista todas as Pessoas

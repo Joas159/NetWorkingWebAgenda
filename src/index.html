@@ -25,11 +25,17 @@
             <div class="cadUsuario escondido">
                 <a href="#">->>Cadastrar Usuário</a>
             </div>
+
             <div class="cadContato escondido">
                 <a href="#">->>Cadastrar Pessoa</a>
             </div>
+
             <div class="cadCompromisso escondido">
                 <a href="#">->>Cadastrar Compromisso</a>
+            </div>
+
+            <div class="cadAtualizacao escondido">
+                <a href="#">->>Cadastrar Atualização de Networking</a>
             </div>
         </div>
         <div class="item02">
@@ -86,14 +92,14 @@
                     <input type="text" id="sobrenome" placeholder="Digite todo seu Sobrenome" required>
                 </div>
 
-                <div class="email">
-                    <label for="email">Email</label> <br>
-                    <input type="email" id="email" placeholder="Digite seu Endereço de Email" required>
+                <div class="emailUser">
+                    <label for="emailUser">Email</label> <br>
+                    <input type="email" id="emailUser" placeholder="Digite seu Endereço de Email" required>
                 </div>
 
-                <div class="telefone">
-                    <label for="telefone">Telefone/Celular</label> <br>
-                    <input type="number" id="telefone" placeholder="Digite Seu Contato Telefônico" required>
+                <div class="telefoneUser">
+                    <label for="telefoneUser">Telefone/Celular</label> <br>
+                    <input type="number" id="telefoneUser" placeholder="Digite Seu Contato Telefônico" required>
                 </div>
 
                 <div class="senha">
@@ -214,6 +220,38 @@
                 <div class="botoesFooter">
                     <button type="submit">Enviar Dados</button>
                     <button type="button" id="encerrarCadCompromisso">FECHAR TELA ATUAL</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="formCadAtualizacao escondido">
+            <!--Cadastro de Atualização de Networking-->
+            <form>
+                <div class="timeAtualizacao">
+                    <label for="timeAtualizacao">Data/Hora da Atualização</label> <br>
+                    <input type="datetime-local" id="timeAtualizacao" placeholder="Digite Data e Hora da Atualização"
+                        required>
+                </div>
+
+                <div class="pessoaAtualizacao">
+                    <label for="pessoaAtualizacao">Pessoa</label> <br>
+                    <input type="text" id="pessoaAtualizacao" placeholder="Digite o Nome da Pessoa em Questão">
+                </div>
+
+                <div class="detalheTXTAtualizacao">
+                    <label for="detalheTXTAtualizacao">Descrição da Atualização</label> <br>
+                    <input type="text" id="detalheTXTAtualizacao" placeholder="Descreva Detalhes da Atualização"
+                        required>
+                </div>
+
+                <div class="detalheIMGAtualizacao">
+                    <label for="detalheIMGAtualizacao">"Print" da Atualização</label> <br>
+                    <img src="./assets/eu.jpg" alt="detalheDaAtualizacao" height="190px" width="190px">
+                </div>
+
+                <div class="botoesFooter">
+                    <button type="submit">Enviar Dados</button>
+                    <button type="button" id="encerrarCadAtualizacao">FECHAR TELA ATUAL</button>
                 </div>
             </form>
         </div>

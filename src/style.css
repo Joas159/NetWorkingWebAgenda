@@ -71,7 +71,7 @@ a {
     border-radius: 8px;
 }
 
-.formCadUsuario label {
+.formCadUsuario  label {
     font-size: 20px;
 }
 
@@ -99,4 +99,24 @@ select {
     margin-bottom: 3px;
     width: 350px; padding: 5px;
     border-radius: 8px;
+}
+
+.formCadCompromisso input {
+    margin-bottom: 20px;
+    width: 350px; padding: 5px;
+    border-radius: 8px;    
+}
+
+.formCadCompromisso label {
+    font-size: 20px;    
+}
+
+.formCadAtualizacao input {
+    margin-bottom: 20px;
+    width: 350px; padding: 5px;
+    border-radius: 8px;    
+}
+
+.formCadAtualizacao input {
+    font-size: 20px;    
 }
