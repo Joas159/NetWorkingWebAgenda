@@ -9,7 +9,6 @@ const cadAtualizacao = document.querySelector('.cadAtualizacao');
 const divItem02 = document.querySelector('.divItem02 a');
 const listPessoas = document.querySelector('.listPessoas');
 const listTarefa = document.querySelector('.listTarefa');
-const listTematica = document.querySelector('.listTematica');
 
 //03
 const divItem03 = document.querySelector('.divItem03 a');
@@ -56,7 +55,11 @@ cadUsuario.addEventListener('click', () => {
     cadCompromisso.classList.add('escondido');
     cadAtualizacao.classList.add('escondido');
     divItem02.classList.add('escondido');
+    listPessoas.classList.add('escondido');
+    listTarefa.classList.add('escondido');
     divItem03.classList.add('escondido');
+    alterarSenha.classList.add('escondido');
+    alterarFoto.classList.add('escondido');
     opItem01.classList.add('escondido');
 });
 
@@ -66,7 +69,11 @@ btnencerrarCadUsuario.addEventListener('click', () => {
     cadCompromisso.classList.remove('escondido');
     cadAtualizacao.classList.remove('escondido');
     divItem02.classList.remove('escondido');
+    listPessoas.classList.remove('escondido');
+    listTarefa.classList.remove('escondido');
     divItem03.classList.remove('escondido');
+    alterarSenha.classList.remove('escondido');
+    alterarFoto.classList.remove('escondido');
     opItem01.classList.remove('escondido');
 });
 
@@ -77,7 +84,11 @@ cadContato.addEventListener('click', () => {
     cadUsuario.classList.add('escondido');
     cadAtualizacao.classList.add('escondido');
     divItem02.classList.add('escondido');
+    listPessoas.classList.add('escondido');
+    listTarefa.classList.add('escondido');
     divItem03.classList.add('escondido');
+    alterarSenha.classList.add('escondido');
+    alterarFoto.classList.add('escondido');
     opItem01.classList.add('escondido');
 });
 
@@ -87,7 +98,11 @@ btnencerrarCadPessoa.addEventListener('click', () => {
     cadUsuario.classList.remove('escondido');
     cadAtualizacao.classList.remove('escondido');
     divItem02.classList.remove('escondido');
+    listPessoas.classList.remove('escondido');
+    listTarefa.classList.remove('escondido');
     divItem03.classList.remove('escondido');
+    alterarSenha.classList.remove('escondido');
+    alterarFoto.classList.remove('escondido');
     opItem01.classList.remove('escondido');
 });
 
@@ -98,7 +113,11 @@ cadCompromisso.addEventListener('click', () => {
     cadUsuario.classList.add('escondido');
     cadAtualizacao.classList.add('escondido');
     divItem02.classList.add('escondido');
+    listPessoas.classList.add('escondido');
+    listTarefa.classList.add('escondido');
     divItem03.classList.add('escondido');
+    alterarSenha.classList.add('escondido');
+    alterarFoto.classList.add('escondido');
     opItem01.classList.add('escondido');
 });
 
@@ -108,7 +127,11 @@ btnencerrarCadCompromisso.addEventListener('click', () => {
     cadUsuario.classList.remove('escondido');
     cadAtualizacao.classList.remove('escondido');
     divItem02.classList.remove('escondido');
+    listPessoas.classList.remove('escondido');
+    listTarefa.classList.remove('escondido');
     divItem03.classList.remove('escondido');
+    alterarSenha.classList.remove('escondido');
+    alterarFoto.classList.remove('escondido');
     opItem01.classList.remove('escondido');
 });
 
@@ -119,7 +142,11 @@ cadAtualizacao.addEventListener('click', () => {
     cadUsuario.classList.add('escondido');
     cadCompromisso.classList.add('escondido');
     divItem02.classList.add('escondido');
+    listPessoas.classList.add('escondido');
+    listTarefa.classList.add('escondido');
     divItem03.classList.add('escondido');
+    alterarSenha.classList.add('escondido');
+    alterarFoto.classList.add('escondido');
     opItem01.classList.add('escondido');
 });
 
@@ -129,6 +156,13 @@ btnencerrarCadAtualizacao.addEventListener('click', () => {
     cadCompromisso.classList.remove('escondido');
     cadUsuario.classList.remove('escondido');
     divItem02.classList.remove('escondido');
+    listPessoas.classList.remove('escondido');
+    listTarefa.classList.remove('escondido');
     divItem03.classList.remove('escondido');
+    alterarSenha.classList.remove('escondido');
+    alterarFoto.classList.remove('escondido');
     opItem01.classList.remove('escondido');
 });
+
+//---------------
+

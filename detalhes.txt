@@ -15,10 +15,9 @@
 * Cadastro de Atualização de Networking
   --> Data/hora || --> Pessoa || --> Atualização(TXT) || --> Atualização(Img) ||
 
--(Agenda)-
+-(Agenda de Compromissos)-
 * Lista todas as Pessoas
 * Lista de tarefas
-* Lista de temáticas
 
 -(Painel de Ações)-
 * Alterar Senha de acesso
