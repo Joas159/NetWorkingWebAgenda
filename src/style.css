@@ -1,4 +1,3 @@
-/*Reset*/
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +18,11 @@ header h1 {
     display: flex;
     flex-direction: column;
     outline: 2px solid black;
-    width: 250px;
-    min-height: 658px;
+    width: 250px; height: 92vh;
     padding: 15px;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #d38d8d;
 }
 
 .escondido {
@@ -34,6 +33,17 @@ header h1 {
 .divItem02,
 .divItem03 {
     margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#opItem01, #opItem02, #opItem03 {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.item01, .item02, .item03 {
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -42,4 +52,51 @@ a {
 
 .fechaSessao {
     margin-top: 15px;
+}
+
+/*Tela Principal*/
+.containerTelaPrincipal {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    position: absolute; top: 57px; left: 252px;
+    height: 92vh; width: 1187px;
+    outline: 2px solid #000000;
+    padding: 15px;
+    background-color: #CACACA;
+}
+
+.formCadUsuario input {
+    margin-bottom: 20px;
+    width: 350px; padding: 5px;
+    border-radius: 8px;
+}
+
+.formCadUsuario label {
+    font-size: 20px;
+}
+
+.botoesFooter {
+    display: flex; justify-content: center; align-items: center;
+    margin-top: 30px; gap: 10px;
+}
+
+.botoesFooter button {
+    padding: 8px; border-radius: 8px;
+}
+
+.formCadPessoa input{
+    margin-bottom: 3px;
+    width: 350px; padding: 5px;
+    border-radius: 8px;
+}
+
+.fotoPerfil {
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column;
+}
+
+select {
+    margin-bottom: 3px;
+    width: 350px; padding: 5px;
+    border-radius: 8px;
 }

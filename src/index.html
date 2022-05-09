@@ -31,16 +31,13 @@
             <div class="cadCompromisso escondido">
                 <a href="#">->>Cadastrar Compromisso</a>
             </div>
-            <div class="cadTematica escondido">
-                <a href="#">->>Cadastrar Temática</a>
-            </div>
-
         </div>
         <div class="item02">
             <div class="divItem02">
-                <a href="#">Agenda de Compromissos</a>
+                <a href="#" id="opItem02">Compromissos</a>
             </div>
 
+            <!--opções para exibição via click-->
             <div class="listPessoas escondido">
                 <a href="#">->>Listar Pessoas</a>
             </div>
@@ -56,9 +53,10 @@
         </div>
         <div class="item03">
             <div class="divItem03">
-                <a href="#">Configs. de Usuário</a>
+                <a href="#" id="opItem03">Configs. de Usuário</a>
             </div>
 
+            <!--opções para exibição via click-->
             <div class="alterarSenha escondido">
                 <a href="#">->>Alterar Senha de Acesso</a>
             </div>
@@ -73,6 +71,152 @@
 
         </div>
     </div>
+
+    <div class="containerTelaPrincipal">
+        <div class="formCadUsuario escondido">
+            <!--Cadastro de Usuário-->
+            <form>
+                <div class="inputPrimeiroNome">
+                    <label for="primeiroNome">Nome</label> <br>
+                    <input type="text" id="primeiroNome" placeholder="Digite Seu Primeiro Nome" required>
+                </div>
+
+                <div class="inputSobrenome">
+                    <label for="sobrenome">Sobrenome</label> <br>
+                    <input type="text" id="sobrenome" placeholder="Digite todo seu Sobrenome" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" placeholder="Digite seu Endereço de Email" required>
+                </div>
+
+                <div class="telefone">
+                    <label for="telefone">Telefone/Celular</label> <br>
+                    <input type="number" id="telefone" placeholder="Digite Seu Contato Telefônico" required>
+                </div>
+
+                <div class="senha">
+                    <label for="senha">Senha</label> <br>
+                    <input type="password" id="senha" placeholder="Digite sua Senha de Acesso ao Sistema" required>
+                </div>
+
+                <div class="botoesFooter">
+                    <button type="submit">Enviar Dados</button>
+                    <button type="button" id="encerrarCadUsuario">FECHAR TELA ATUAL</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="formCadPessoa escondido">
+            <!--Cadastro de Contato-->
+            <form>
+                <div class="nome">
+                    <label for="nome">Nome</label> <br>
+                    <input type="text" id="nome" placeholder="Digite o Nome" required>
+                </div>
+
+                <div class="perfil">
+                    <label for="perfil">Perfil</label> <br>
+                    <input type="text" id="perfil" placeholder="Digite o Perfil da Pessoa + a Rede Social Vinculada "
+                        required>
+                </div>
+
+                <div class="tematica">
+                    <label for="tematica">Temática</label> <br>
+                    <select id="listaTemas">
+                        <option value="" disabled selected>Temáticas</option>
+                        <option value="AC">Carreira Profissional</option>
+                        <option value="AL">Desenvolvimento Pessoal</option>
+                        <option value="AP">Amadurecimento Espiritual</option>
+                        <option value="AM">Aprendizado</option>
+                    </select>
+                </div>
+
+                <div class="dataContatoInicial">
+                    <label for="dataContatoInicial">Data do Contato Inicial</label> <br>
+                    <input type="date" id="dataContatoInicial" required>
+                </div>
+
+                <div class="aniversario">
+                    <label for="aniversario">Data de Aniversário</label> <br>
+                    <input type="date" id="aniversario" required>
+                </div>
+
+                <div class="telefone">
+                    <label for="telefone">Contato Telefônico</label> <br>
+                    <input type="number" id="telefone" placeholder="Digite o Número de Contato Telefônico" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" placeholder="Digite o Email" required>
+                </div>
+
+                <div class="fotoPerfil">
+                    <p>Foto de Perfil</p> <br>
+                    <img src="./assets/eu.jpg" alt="fotoDePerfil" width="90px" height="90px"
+                        style="border-radius: 60% ;">
+                </div>
+
+                <div class="dataUltimaAtualizacao">
+                    <label for="dataUltimaAtualizacao">Data da Última Atualização</label> <br>
+                    <input type="date" id="dataUltimaAtualizacao" required>
+                </div>
+
+                <div class="tempoRecorrAtualizacao">
+                    <label for="tempoRecorrAtualizacao">Tempo de Recorrência para Atualização em dias</label> <br>
+                    <input type="number" id="tempoRecorrAtualizacao" required>
+                </div>
+
+                <div class="botoesFooter">
+                    <button type="submit">Enviar Dados</button>
+                    <button type="button" id="encerrarCadPessoa">FECHAR TELA ATUAL</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="formCadCompromisso escondido">
+            <!--Cadastro de Compromisso-->
+            <form>
+                <div class="localCompromisso">
+                    <label for="localCompromisso">Local do Compromisso</label> <br>
+                    <input type="text" id="localCompromisso" placeholder="Digite o Local do Compromisso" required>
+                </div>
+
+                <div class="horaInicioCompromisso">
+                    <label for="horaInicioCompromisso">Hora do Início do Compromisso</label> <br>
+                    <input type="time" id="horaInicioCompromisso"
+                        placeholder="Digite o Horário de Início do Compromisso" required>
+                </div>
+
+                <div class="horaFinalCompromisso">
+                    <label for="horaFinalCompromisso">Hora para Finalização do Compromisso</label> <br>
+                    <input type="time" id="horaFinalCompromisso"
+                        placeholder="Digite o Horário de Conclusão do Compromisso" required>
+                </div>
+
+                <div class="valor">
+                    <label for="valor">Valor da Prestação de Serviços</label> <br>
+                    <input type="number" id="valor" placeholder="Digite o Valor da Prestação de Serviços" required>
+                </div>
+
+                <div class="alarme">
+                    <label for="alarme">Alarme</label> <br>
+                    <input type="datetime-local" id="alarme" placeholder="Insira Data/Hora para Alarme" required>
+                </div>
+
+                <div class="observacoes">
+                    <label for="observacoes">Observações Adicionais</label> <br>
+                    <input type="text" id="observacoes" placeholder="Observações Adicionais">
+                </div>
+
+                <div class="botoesFooter">
+                    <button type="submit">Enviar Dados</button>
+                    <button type="button" id="encerrarCadCompromisso">FECHAR TELA ATUAL</button>
+                </div>
+            </form>
+        </div>
 </body>
 
 </html>
