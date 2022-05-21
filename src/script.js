@@ -1,3 +1,5 @@
+const rootDiv = document.querySelector('.containerTelaPrincipal');
+
 //01
 const opItem01 = document.querySelector('#opItem01');
 const cadUsuario = document.querySelector('.cadUsuario');
@@ -7,7 +9,7 @@ const cadAtualizacao = document.querySelector('.cadAtualizacao');
 
 //02
 const divItem02 = document.querySelector('.divItem02 a');
-const listPessoas = document.querySelector('.listPessoas');
+const listPessoas = document.querySelector('.listPessoas'); // listar pessoas
 const listTarefa = document.querySelector('.listTarefa'); //listar compromissos
 
 //03
@@ -146,4 +148,58 @@ btnencerrarCadAtualizacao.addEventListener('click', () => {
     divItem02.classList.remove('escondido');
     divItem03.classList.remove('escondido');
     opItem01.classList.remove('escondido');
+});
+
+//exibir listagem com todas as pessoas de interesse
+listPessoas.addEventListener('click', () => {
+    fetch('http://localhost:3000/listPessoas').then((resposta) => {
+        const promessaBody = resposta.json();
+
+        promessaBody.then((respostaEfetiva) => {
+
+            respostaEfetiva.forEach(coment => {
+
+                //elemento unitário de bloco
+                const DIVcoment = document.createElement('div');
+                DIVcoment.classList.add('stComentario');
+
+                //elemento contendo Id
+                const id = document.createElement('p');
+                id.innerHTML = (`Id.:<br/> ${id}<br/>`);
+
+                //elemento contendo Nome
+                const nomePessoa = document.createElement('p');
+                nomePessoa.innerHTML = (`Nome.:<br/> ${nome}<br/>`);
+
+                //elemento contendo Perfil
+                const perfil = document.createElement('p');
+                perfil.innerHTML = (`Email.:<br/>${perfil}<br/>`);
+
+                //elemento contendo Tematica
+                const tematica = document.createElement('p');
+                tematica.innerHTML = (`Comentário.:<br/>${tematica}<br/>`);
+
+                //elemento contendo Data de Aniversario
+                const dt_aniversario = document.createElement('p');
+                dt_aniversario.innerHTML = (`Comentário.:<br/>${dt_aniversario}<br/>`);
+
+                //elemento contendo Telefone
+                const telefone = document.createElement('p');
+                telefone.innerHTML = (`Comentário.:<br/>${telefone}<br/>`);
+
+                //elemento contendo Email
+                const email = document.createElement('p');
+                email.innerHTML = (`Comentário.:<br/>${email}<br/>`);
+
+                //elemento contendo foto_perfil
+                const foto_perfil = document.createElement('p');
+                telefone.innerHTML = (`Comentário.:<br/>${foto_perfil}<br/>`);
+
+                //elemento contendo Append pro body(root) em merge
+                DIVcoment.append(nomePessoa, perfil, tematica, dt_aniversario, telefone, email, foto_perfil);
+                root.append(DIVcoment);
+            });
+
+        });
+    });
 });

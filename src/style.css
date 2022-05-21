@@ -63,6 +63,7 @@ a {
 .containerTelaPrincipal {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -140,4 +141,19 @@ select {
 
 .formCadAtualizacao input {
     font-size: 20px;
+}
+
+.stComentario {
+    display: flex; flex-direction: column; flex-wrap: wrap; 
+    background-color: #aaa9a9;
+    border-radius: 4px;
+    padding-right: 1px;
+    border: 1px solid black;
+    width: 31vw;
+    margin: 3px;
+}
+
+.stComentario p {
+    padding: 4px;
+    margin: 2px;
 }
